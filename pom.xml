@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.2.5.RELEASE</version>
+        <version>2.2.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -19,11 +19,15 @@
     <modules>
         <module>gmall-admin</module>
         <module>gmall-common</module>
+        <module>gmall-pms</module>
+        <module>gmall-oms</module>
+        <module>gmall-sms</module>
+        <module>gmall-wms</module>
     </modules>
 
     <properties>
         <spring-cloud.version>Hoxton.SR2</spring-cloud.version>
-        <spring-cloud-alibaba.version>2.1.0.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud-alibaba.version>2.2.0.RELEASE</spring-cloud-alibaba.version>
         <mybatisplus.version>3.3.1.tmp</mybatisplus.version>
         <mysql.version>5.1.46</mysql.version>
         <swagger.version>2.9.2</swagger.version>
@@ -51,6 +55,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
 
             <dependency>
                 <groupId>org.redisson</groupId>
